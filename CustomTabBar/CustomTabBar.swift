@@ -13,12 +13,12 @@ final class CustomTabBar: UITabBar {
     private let plusButton = PlusButton(type: .system)
     
     override func draw(_ rect: CGRect) {
-        
+        configureShape()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupTabBar()
+        //setupTabBar()
     }
     
     required init?(coder: NSCoder) {
@@ -36,12 +36,13 @@ final class CustomTabBar: UITabBar {
 extension CustomTabBar {
     
     private func configureShape() {
-        let path: UIBezierPath = getTabBarPath()
+        
+        let path = getTabBarPath()
         let shape = CAShapeLayer()
         shape.path = path.cgPath
         shape.lineWidth = 3
         shape.strokeColor = UIColor.blue.cgColor
-        shape.fillColor = UIColor.blue.cgColor
+        //shape.fillColor = UIColor.blue.cgColor
         layer.insertSublayer(shape, at: 0)
     }
     
@@ -51,6 +52,14 @@ extension CustomTabBar {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: 0))
         path.addLine(to: CGPoint(x: 100, y: 0))
+        
+        path.addArc(withCenter: CGPoint(x: frame.width / 2, y: 0),
+                    radius: 30,
+                    startAngle: .pi,
+                    endAngle: .pi * 2,
+                    clockwise: false)
+        
+        path.addLine(to: CGPoint(x: frame.width, y: 0))
         
         return path
     }

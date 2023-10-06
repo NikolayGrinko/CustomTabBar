@@ -13,7 +13,7 @@ class CustomTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+      
         setValue(customTabBar, forKey: "tabBar")
         setupTabItems()
     }
@@ -28,7 +28,7 @@ class CustomTabBarController: UITabBarController {
         secondVC.tabBarItem.title = "Subscribe"
         secondVC.tabBarItem.image = UIImage(systemName: "pencil.tip.crop.circle.badge.plus.fill")
         
-        setViewControllers([firstVC, secondVC], animated: true)
+        setViewControllers([firstVC, secondVC], animated: false)
     }
     
 }
