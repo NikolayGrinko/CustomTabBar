@@ -2,7 +2,7 @@
 //  PlusButton.swift
 //  CustomTabBar
 //
-//  Created by Николай Гринько on 06.10.2023.
+//  Created by Николай Гринько on 07.10.2023.
 //
 
 import UIKit
@@ -36,3 +36,4 @@ final class PlusButton: UIButton {
     }
     
 }
+

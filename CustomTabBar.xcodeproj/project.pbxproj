@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20023D3F2AD0B09D009997C9 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20023D3E2AD0B09D009997C9 /* CustomTabBarController.swift */; };
+		20023D412AD0B0B8009997C9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20023D402AD0B0B8009997C9 /* CustomTabBar.swift */; };
+		20023D432AD0B10A009997C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20023D422AD0B10A009997C9 /* SecondViewController.swift */; };
+		20023D452AD0B14C009997C9 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20023D442AD0B14C009997C9 /* PlusButton.swift */; };
 		2046532F2AD051290088F90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046532E2AD051290088F90B /* AppDelegate.swift */; };
 		204653312AD051290088F90B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204653302AD051290088F90B /* SceneDelegate.swift */; };
 		204653332AD051290088F90B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204653322AD051290088F90B /* ViewController.swift */; };
 		204653382AD0512B0088F90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204653372AD0512B0088F90B /* Assets.xcassets */; };
 		2046533B2AD0512B0088F90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204653392AD0512B0088F90B /* LaunchScreen.storyboard */; };
-		204653442AD057BD0088F90B /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204653432AD057BD0088F90B /* PlusButton.swift */; };
-		2046534A2AD0A3940088F90B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204653492AD0A3940088F90B /* CustomTabBarController.swift */; };
-		2046534C2AD0A45D0088F90B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046534B2AD0A45D0088F90B /* CustomTabBar.swift */; };
-		2046534E2AD0A52C0088F90B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046534D2AD0A52C0088F90B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20023D3E2AD0B09D009997C9 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		20023D402AD0B0B8009997C9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		20023D422AD0B10A009997C9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		20023D442AD0B14C009997C9 /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		2046532B2AD051290088F90B /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2046532E2AD051290088F90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		204653302AD051290088F90B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +30,6 @@
 		204653372AD0512B0088F90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2046533A2AD0512B0088F90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2046533C2AD0512B0088F90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		204653432AD057BD0088F90B /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
-		204653492AD0A3940088F90B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
-		2046534B2AD0A45D0088F90B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		2046534D2AD0A52C0088F90B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,50 +62,18 @@
 		2046532D2AD051290088F90B /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				204653472AD0A3510088F90B /* Application */,
-				204653482AD0A36B0088F90B /* NavigationModel */,
-				204653462AD0A3090088F90B /* SupportingFiles */,
-				204653422AD0579D0088F90B /* UI */,
 				2046532E2AD051290088F90B /* AppDelegate.swift */,
 				204653302AD051290088F90B /* SceneDelegate.swift */,
+				20023D3E2AD0B09D009997C9 /* CustomTabBarController.swift */,
+				20023D402AD0B0B8009997C9 /* CustomTabBar.swift */,
+				204653322AD051290088F90B /* ViewController.swift */,
+				20023D422AD0B10A009997C9 /* SecondViewController.swift */,
+				20023D442AD0B14C009997C9 /* PlusButton.swift */,
 				204653372AD0512B0088F90B /* Assets.xcassets */,
 				204653392AD0512B0088F90B /* LaunchScreen.storyboard */,
 				2046533C2AD0512B0088F90B /* Info.plist */,
 			);
 			path = CustomTabBar;
-			sourceTree = "<group>";
-		};
-		204653422AD0579D0088F90B /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				204653432AD057BD0088F90B /* PlusButton.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		204653462AD0A3090088F90B /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				204653322AD051290088F90B /* ViewController.swift */,
-				2046534D2AD0A52C0088F90B /* SecondViewController.swift */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		204653472AD0A3510088F90B /* Application */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		204653482AD0A36B0088F90B /* NavigationModel */ = {
-			isa = PBXGroup;
-			children = (
-				204653492AD0A3940088F90B /* CustomTabBarController.swift */,
-				2046534B2AD0A45D0088F90B /* CustomTabBar.swift */,
-			);
-			path = NavigationModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,13 +146,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20023D432AD0B10A009997C9 /* SecondViewController.swift in Sources */,
 				204653332AD051290088F90B /* ViewController.swift in Sources */,
+				20023D412AD0B0B8009997C9 /* CustomTabBar.swift in Sources */,
 				2046532F2AD051290088F90B /* AppDelegate.swift in Sources */,
-				2046534A2AD0A3940088F90B /* CustomTabBarController.swift in Sources */,
+				20023D452AD0B14C009997C9 /* PlusButton.swift in Sources */,
+				20023D3F2AD0B09D009997C9 /* CustomTabBarController.swift in Sources */,
 				204653312AD051290088F90B /* SceneDelegate.swift in Sources */,
-				2046534E2AD0A52C0088F90B /* SecondViewController.swift in Sources */,
-				2046534C2AD0A45D0088F90B /* CustomTabBar.swift in Sources */,
-				204653442AD057BD0088F90B /* PlusButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

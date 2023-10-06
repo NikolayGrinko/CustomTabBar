@@ -2,7 +2,7 @@
 //  CustomTabBarController.swift
 //  CustomTabBar
 //
-//  Created by Николай Гринько on 06.10.2023.
+//  Created by Николай Гринько on 07.10.2023.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class CustomTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .white
         setValue(customTabBar, forKey: "tabBar")
         setupTabItems()
     }
@@ -28,7 +28,8 @@ class CustomTabBarController: UITabBarController {
         secondVC.tabBarItem.title = "Subscribe"
         secondVC.tabBarItem.image = UIImage(systemName: "pencil.tip.crop.circle.badge.plus.fill")
         
-        setViewControllers([firstVC, secondVC], animated: false)
+        setViewControllers([firstVC, secondVC], animated: true)
     }
     
 }
+
