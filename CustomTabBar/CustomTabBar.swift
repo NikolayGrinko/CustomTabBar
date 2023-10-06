@@ -82,6 +82,8 @@ extension CustomTabBar {
         path.addLine(to: CGPoint(x: frame.width, y: frame.height))
         path.addLine(to: CGPoint(x: 0, y: frame.height))
         
+        // отрисовка кривой линии
+        //path.addCurve(to: <#T##CGPoint#>, controlPoint1: <#T##CGPoint#>, controlPoint2: <#T##CGPoint#>)
         
         return path
     }
