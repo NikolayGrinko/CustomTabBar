@@ -18,7 +18,8 @@ final class CustomTabBar: UITabBar {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        //setupTabBar()
+        setupTabBar()
+        setupPlusButton()
     }
     
     required init?(coder: NSCoder) {
@@ -29,6 +30,20 @@ final class CustomTabBar: UITabBar {
         
         tintColor = .red
         unselectedItemTintColor = .black
+    }
+    private func setupPlusButton() {
+        addSubview(plusButton)
+        NSLayoutConstraint.activate([
+            plusButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            plusButton.centerYAnchor.constraint(equalTo: topAnchor),
+            plusButton.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6),
+            plusButton.widthAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6)
+        ])
+    }
+    
+    //MARK: Hit test
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        plusButton.frame.contains(point) ? plusButton : super.hitTest(point, with: event)
     }
     
 }
@@ -41,8 +56,8 @@ extension CustomTabBar {
         let shape = CAShapeLayer()
         shape.path = path.cgPath
         shape.lineWidth = 3
-        shape.strokeColor = UIColor.blue.cgColor
-        //shape.fillColor = UIColor.blue.cgColor
+        shape.strokeColor = UIColor.white.cgColor
+        shape.fillColor = UIColor.white.cgColor
         layer.insertSublayer(shape, at: 0)
     }
     
@@ -50,16 +65,23 @@ extension CustomTabBar {
     private func getTabBarPath() -> UIBezierPath {
         
         let path = UIBezierPath()
+        // line left
         path.move(to: CGPoint(x: 0, y: 0))
         path.addLine(to: CGPoint(x: 100, y: 0))
         
+        // line circle
         path.addArc(withCenter: CGPoint(x: frame.width / 2, y: 0),
                     radius: 30,
                     startAngle: .pi,
                     endAngle: .pi * 2,
                     clockwise: false)
-        
+        // line right
         path.addLine(to: CGPoint(x: frame.width, y: 0))
+        
+        // line bottom
+        path.addLine(to: CGPoint(x: frame.width, y: frame.height))
+        path.addLine(to: CGPoint(x: 0, y: frame.height))
+        
         
         return path
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PlusButton: UIButton {
+ class PlusButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
